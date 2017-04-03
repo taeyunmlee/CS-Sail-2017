@@ -1,0 +1,17 @@
+
+body  {     background-color:707070;
+	    text-align:center;}
+
+td    {color:0ABDC0;
+        font-size:20px}
+
+
+p   {color:1919D1;
+		font-size:25px}
+
+
+
+
+a:link {color:#1919D1} /*unvisited link*/
+
+a:visited {color:#00FFFF} /*visited link*/ 
