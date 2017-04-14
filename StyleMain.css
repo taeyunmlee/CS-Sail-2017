@@ -1,17 +1,10 @@
 
-body  {     background-color:707070;
+body  {     background-color:F0F0F0;
 	    text-align:center;}
 
-td    {color:0ABDC0;
-        font-size:20px}
+p   {color:A0A0A0;
+				font-size:25px}
 
+a:link {color:#111111} /*unvisited link*/
 
-p   {color:1919D1;
-		font-size:25px}
-
-
-
-
-a:link {color:#1919D1} /*unvisited link*/
-
-a:visited {color:#00FFFF} /*visited link*/ 
+a:visited {color:#000000} /*visited link*/

@@ -4,12 +4,110 @@
 Main Page
 </title>
 <link rel=stylesheet type=text/css href=StyleMain.css>
+<script>
+function clearAge() {
+    document.getElementById("age").value = "";
+}
+
+function alertAns(){
+  var Age;
+  var flavor = "";
+  var radio = "";
+  var sb = "";
+  Age = document.getElementById("age").value;
+  window.alert("Your Age Is: " + Age);
+  if(document.getElementById("v").checked == true)
+  {
+    flavor += "vanilla ";
+  }
+  if(document.getElementById("s").checked == true)
+  {
+    flavor += "strawberry ";
+  }
+  if(document.getElementById("c").checked == true)
+  {
+    flavor += "chocolate ";
+  }
+  if(document.getElementById("m").checked == true)
+  {
+    flavor += "mint ";
+  }
+  window.alert("Your flavors Are: " + flavor);
+
+  if(document.getElementById("r").checked == true)
+  {
+    radio = "a righty";
+  }
+  else if(document.getElementById("l").checked == true)
+  {
+    radio = "a lefty";
+  }
+  else
+  {
+    radio = "Ambidextrous";
+  }
+  window.alert("Your Are " + radio);
+
+  if(document.getElementById("you").checked == true)
+  {
+    sb = "you";
+  }
+  else if(document.getElementById("must").checked == true)
+  {
+    sb = "must";
+  }
+  else if(document.getElementById("choose").checked == true)
+  {
+    sb = "choose";
+  }
+  else
+    {
+      sb = "one"
+    }
+
+  window.alert("Your Choice: " + sb);
+}
+
+</script>
 </head>
 <body>
 <center>
   <p>This is a boring html page</p>
-  Make your assigned page better!
-  <br>
+  <p1> Make your assigned page better! </p1>
+  <br>   <br>
+
+<input type="text" id="age" value="Enter Your Age" onclick="clearAge()">
+<br> <br>
+
+<p align="left">
+<br>
+What ice cream flavors do you like? <br>
+<input type="checkbox" name="Year in School" id="v" value="vanilla">vanilla <br>
+<input type="checkbox" name="Year in School" id="s" value="strawberry">strawberry<br>
+<input type="checkbox" name="Year in School" id="c" value="chocolate">chocolate<br>
+<input type="checkbox" name="Year in School" id="m" value="mint">mint<br>
+</p>
+
+<p align="right">
+<input type="radio" name="hand" id="r" value="rh"> I am a Righty <br>
+<input type="radio" name="hand" id="l" value="lh"> I am a Lefty  <br>
+<input type="radio" name="hand" id="a" value="bh"> I am Ambidextrous <br>
+</p>
+
+Select Boxes are done like this:
+<select>
+<option value="You" id="you"> You
+<option value="must" id="must"> must
+<option value="choose" id="choose"> choose
+<option value="one" id="one"> one
+</select>
+
+<br>
+
+<input type="button" onclick="alertAns()" value="Submit">
+
+<br>
+    <br>  <br>  <br>  <br>
 <a href="Page1.html" > Page 1</a>
 <a href="Page2.html" > Page 2</a>
 <a href="Page3.html" > Page 3</a>
